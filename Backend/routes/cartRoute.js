@@ -1,5 +1,5 @@
 import express from 'express'
-import authMiddle from '../../../../MPR-sem6/PulmoCare/Backend/middleware/auth.js';
+import authMiddle from '../middleware/auth.js';
 import { addToCart, removeFromCart, getCart } from '../../../../MPR-sem6/PulmoCare/Backend/controllers/cartController.js'
 
 const cartRouter = express.Router();
