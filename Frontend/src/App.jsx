@@ -42,7 +42,7 @@ export default function LandingPage() {
         className="w-1/2 h-full flex flex-col justify-center p-10 space-y-6"
       >
         <h1 className="text-6xl font-extrabold tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-300">
-          Welcome to LungSpace
+          Welcome to Pulmocare
         </h1>
         <p className="text-lg text-gray-300 leading-relaxed">
           The human lungs are essential respiratory organs that facilitate the exchange of oxygen and carbon dioxide. They play a vital role in supplying oxygen to the bloodstream and expelling waste gases from the body.
