@@ -1,11 +1,9 @@
 import express from "express"
 import cors from "cors"
-import { ConnectDB } from "./config/db.js"
-import DataRouter from "./routes/Route.js"
-import userRouter from "./routes/userRoute.js"
+import { ConnectDB } from "../../../RentalVerse/RentalVerse/backend/config/db.js"
+import userRouter from "../../../RentalVerse/RentalVerse/backend/routes/userRoute.js"
 import 'dotenv/config'
-import cartRouter from "./routes/cartRoute.js"
-import orderRouter from "./routes/orderRoute.js"
+
 
 
 // app configuration
@@ -22,11 +20,8 @@ ConnectDB()
 
 // creating endpoints
 
-app.use('/api/laptop', DataRouter)
-app.use("/images", express.static('uploads'))
+
 app.use("/api/user", userRouter)
-app.use("/api/cart", cartRouter)
-app.use("/api/order", orderRouter)
 
 
 app.get("/", (req, res) => {
