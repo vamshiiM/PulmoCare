@@ -17,7 +17,7 @@ function AboutPulmocare() {
 
       {/* Image Section */}
       <div className="flex justify-center mb-10">
-        <img src="Lung-Cancer-Detection.jpg" alt="Lung Cancer Detection" className="w-2/3 rounded-lg shadow-md" />
+        <img src="LungCancer.jpeg" alt="Lung Cancer Detection" className="w-2/3 rounded-lg shadow-md" />
       </div>
 
       {/* How It Works */}
@@ -29,8 +29,8 @@ function AboutPulmocare() {
 
       {/* Two Images Section */}
       <div className="grid grid-cols-2 gap-8 mb-10">
-        <img src="/images/upload_scan.jpg" alt="Upload Scan" className="w-full rounded-lg shadow-md" />
-        <img src="/images/ai_analysis.jpg" alt="AI Analysis" className="w-full rounded-lg shadow-md" />
+        <img src="AICancer.jpeg" alt="Upload Scan" className="w-full rounded-lg shadow-md" />
+        <img src="AICancer2.jpeg" alt="AI Analysis" className="w-full rounded-lg shadow-md" />
       </div>
 
       {/* Why Pulmocare */}
