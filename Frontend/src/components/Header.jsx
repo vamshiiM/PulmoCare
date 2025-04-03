@@ -2,7 +2,6 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLungs, faHome, faVial, faFileMedical, faUserMd, faInfoCircle, faCircleUser } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 import styled from 'styled-components';
 
 const Header = () => {
