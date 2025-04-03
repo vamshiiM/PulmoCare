@@ -144,7 +144,7 @@ const HomePage = () => {
 
       {/* Survivor Stories */}
       <motion.section
-        className="py-16 px-6 md:px-20 text-center bg-gray-50"
+        className="py-16 px-6 md:px-20 text-center bg-blue-500"
         initial="hidden"
         whileInView="visible"
         exit="exit"
@@ -152,7 +152,7 @@ const HomePage = () => {
         variants={sectionVariants}
         custom={scrollDirection}
       >
-        <h2 className="text-3xl font-semibold text-gray-800">Survivor Stories</h2>
+        <h2 className="text-3xl font-semibold text-gray-800 ">Survivor Stories</h2>
         <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Read inspiring stories of people who fought lung cancer and emerged stronger.</p>
         <motion.div
           className="relative w-full flex justify-center items-center mt-8"
@@ -165,7 +165,7 @@ const HomePage = () => {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -50 }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.3 }}
               className="w-full max-w-md p-6 text-center bg-white shadow-lg rounded-2xl border border-gray-200 hover:shadow-2xl transition-shadow duration-300"
             >
               <div className="flex flex-col items-center">
