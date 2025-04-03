@@ -10,7 +10,7 @@ const HomePage = () => {
   const [lastScrollY, setLastScrollY] = useState(0);
 
   const survivors = [
-    { name: "John Doe", story: "I was diagnosed early and with the right treatment, I beat lung cancer.", image: "/images/person1.jpg" },
+    { name: "John Doe", story: "I was diagnosed early and with the right treatment, I beat lung cancer.", image: "/images/person2.jpg" },
     { name: "Jane Smith", story: "Support groups and treatment helped me through the toughest times.", image: "/images/person2.jpg" },
     { name: "Mike Johnson", story: "Never give up. Early screening saved my life.", image: "/images/person3.jpg" }
   ];
