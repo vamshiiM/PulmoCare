@@ -33,6 +33,10 @@ const Header = () => {
           <FontAwesomeIcon icon={faUserMd} className="mr-2" /> Find Doctor
           <span className="absolute left-7 bottom-0 w-0 h-0.5 bg-blue-400 transition-all duration-500 group-hover:w-24"></span>
         </Link>
+        <Link to="/SignUp" className="hover:text-blue-400 transition duration-300 group relative">
+          <FontAwesomeIcon icon={faUserMd} className="mr-2" /> Sign Up
+          <span className="absolute left-7 bottom-0 w-0 h-0.5 bg-blue-400 transition-all duration-500 group-hover:w-24"></span>
+        </Link>
       </div>
     </div>
   );
