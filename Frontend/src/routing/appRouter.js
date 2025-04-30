@@ -4,8 +4,8 @@ import About from "../components/About";
 import Body from "../components/Body";
 import CancerTest from "../components/CancerTest";
 import HealthRecords from "../components/HealthRecords";
-import FindDoctor from "../components/FindDoctor";
 import SignUp from "../components/SignUp";
+import FindDoctors from "../components/FindDoctors";
 
 
 const appRouter = createBrowserRouter([
@@ -31,18 +31,18 @@ const appRouter = createBrowserRouter([
 
             },
             {
-                path: "HealthRecord",
-                Component: HealthRecords
+                path: "HealthRecords",
+                Component: HealthRecords,
 
             },
             {
-                path: "FindDocter",
-                Component: FindDoctor
+                path: "FindDoctors",
+                Component: FindDoctors,
 
             },
             {
                 path: "SignUp",
-                Component: SignUp
+                Component: SignUp,
 
             },
 

@@ -1,22 +1,48 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faEnvelope, faLock } from "@fortawesome/free-solid-svg-icons";
+import { auth } from "../backend/firebase";
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function AuthPage() {
     const [isSignIn, setIsSignIn] = useState(true);
     const [form, setForm] = useState({ username: "", email: "", password: "" });
+    const [message, setMessage] = useState({ type: "", text: "" });
 
     const handleChange = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = () => {
-        alert(`${isSignIn ? "Sign In" : "Sign Up"} with ${isSignIn ? "Email: " + form.email : "Username: " + form.username + ", Email: " + form.email}, Password: ${form.password}`);
+    const handleSubmit = async () => {
+        setMessage({ type: "", text: "" });
+        try {
+            if (isSignIn) {
+                await signInWithEmailAndPassword(auth, form.email, form.password);
+                toast.success("Signed in successfully!");
+                setMessage({ type: "success", text: "Signed in successfully!" });
+                console.log("Signed in successfully");
+            } else {
+                await createUserWithEmailAndPassword(auth, form.email, form.password);
+                toast.success("Account created successfully!");
+                setMessage({ type: "success", text: "Account created successfully!" });
+                console.log("Account created successfully");
+            }
+        } catch (error) {
+            const errorMessage = error.message.includes("auth")
+                ? "Invalid credentials or account already exists"
+                : error.message;
+            toast.error(errorMessage);
+            setMessage({ type: "error", text: errorMessage });
+            console.error("Auth error:", error.message);
+        }
     };
 
     return (
-        <div className="flex items-center justify-center h-screen bg-gradient-to-r from-blue-400 via-green-300 to-teal-500 bg-cover bg-center">
+        <div className="flex items-center justify-center h-screen bg-black">
+            <ToastContainer />
             <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -32,7 +58,9 @@ export default function AuthPage() {
                 >
                     {isSignIn ? "Welcome Back!" : "Create an Account"}
                 </motion.h2>
+
                 <form
+                    key={isSignIn ? "signInForm" : "signUpForm"}
                     onSubmit={(e) => {
                         e.preventDefault();
                         handleSubmit();
@@ -92,6 +120,23 @@ export default function AuthPage() {
                         {isSignIn ? "Sign In" : "Sign Up"}
                     </motion.button>
                 </form>
+
+                <AnimatePresence>
+                    {message.text && (
+                        <motion.div
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -10 }}
+                            className={`mt-4 p-2 rounded text-sm border ${message.type === "success"
+                                ? "bg-green-100 text-green-700 border-green-500"
+                                : "bg-red-100 text-red-700 border-red-500"
+                                }`}
+                        >
+                            {message.text}
+                        </motion.div>
+                    )}
+                </AnimatePresence>
+
                 <motion.p
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -100,7 +145,10 @@ export default function AuthPage() {
                 >
                     {isSignIn ? "Don't have an account?" : "Already have an account?"}
                     <button
-                        onClick={() => setIsSignIn(!isSignIn)}
+                        onClick={() => {
+                            setIsSignIn(!isSignIn);
+                            setMessage({ type: "", text: "" });
+                        }}
                         className="text-blue-500 hover:underline ml-1"
                     >
                         {isSignIn ? "Sign Up" : "Sign In"}

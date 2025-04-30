@@ -17,7 +17,7 @@ function CancerTest() {
   };
 
   return (
-    <div className="p-4 max-w-md mx-auto border rounded-lg shadow-lg text-center">
+    <div className="p-4 m-32 max-w-md mx-auto border rounded-lg shadow-lg text-center">
       <h2 className="text-xl font-bold mb-4">Cancer Test</h2>
       <input 
         type="file" 

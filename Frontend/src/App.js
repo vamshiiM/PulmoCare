@@ -7,19 +7,19 @@ import { Outlet } from 'react-router'
 
 
 function App() {
-  
+
 
   return (
 
     <>
-     <Header/>
-     <Outlet/>
-     {/* Outlet can take three possible values </Body> <About/> <ContactUs/> */}
-     <Footer/>
-     </>
-    
+      <Header />
+      <Outlet />
+      {/* Outlet can take three possible values </Body> <About/> <ContactUs/> */}
+      <Footer />
+    </>
+
   )
 }
 
 export default App
-      
+

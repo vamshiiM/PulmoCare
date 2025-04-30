@@ -1,0 +1,111 @@
+export const doctors = [
+  {
+    id: 1,
+    name: "Dr. Manjunath N M L",
+    specialty: "Surgical Oncology",
+    location: "Bengaluru, Karnataka",
+    country: "India",
+    rating: 4.9,
+    tags: ["Surgical Oncology"],
+    imageUrl: "https://www.manipalhospitals.com/uploads/doctors_photo/best-surgical-oncologist-in-bangalore-dr-manjunath-n-m-l.webp",
+    googleUrl: "https://www.manipalhospitals.com/jayanagar/doctors/dr-manjunath-n-m-l-surgical-oncologist/",
+    hospital: "Manipal Hospital"
+  },
+  {
+    id: 2,
+    name: "Dr. Kumar Prabhash",
+    specialty: "Medical Oncology ",
+    location: "Mumbai, Maharashtra",
+    country: "India",
+    rating: 4.8,
+    tags: ["Lung Cancer", "Clinical Trials", "Precision Medicine"],
+    imageUrl: "https://content.jdmagicbox.com/v2/comp/mumbai/d8/022pxx22.xx22.170601072525.b9d8/catalogue/dr-kumar-prabhash-tata-memorial-hospital-parel-mumbai-oncologist-surgeon-doctors-XURTXgQgwI.jpg",
+    googleUrl: "https://www.justdial.com/Mumbai/Dr-Kumar-Prabhash-Tata-Memorial-Hospital-Parel/022PXX22-XX22-170601072525-B9D8_BZDET",
+    hospital: "Tata Memorial Hospital"
+  },
+  {
+    id: 3,
+    name: "Dr. Ullas Batra",
+    specialty: "Medical Oncology - Thoracic Oncology",
+    location: "Delhi",
+    country: "India",
+    rating: 4.7,
+    tags: ["Lung Cancer", "Targeted Therapy", "Molecular Diagnostics"],
+    imageUrl: "https://images.myacare.com/uploads/profile/images/f7e85e197fee4ba9a7d0cc480445a7c7.webp",
+    googleUrl: "https://myacare.com/doctor/dr-ullas-batra-india",
+    hospital: "Rajiv Gandhi Cancer Institute"
+  },
+  {
+    id: 4,
+    name: "Dr. Suresh Advani",
+    specialty: "Surgical Oncology - Thoracic",
+    location: "Mumbai, Maharashtra",
+    country: "India",
+    rating: 4.9,
+    tags: ["Lung Resection", "Minimally Invasive", "Thoracic Surgery"],
+    imageUrl: "https://uhapo.co.in/wp-content/uploads/2023/02/Dr-Suresh-Advani.png",
+    googleUrl: "https://drsureshadvani.in/make-appointment/",
+    hospital: "Tata Memorial Hospital"
+  },
+  {
+    id: 5,
+    name: "Dr. Navneet Singh",
+    specialty: "Pulmonary Medicine - Lung Cancer",
+    location: "Chandigarh",
+    country: "India",
+    rating: 4.7,
+    tags: ["Lung Cancer Diagnosis", "Interventional Pulmonology", "Clinical Research"],
+    imageUrl: "https://indiachest.org/wp-content/uploads/2016/01/NS-1.jpg",
+    googleUrl: "https://pgimer.edu.in/PGIMER_PORTAL/PGIMERPORTAL/Department/Global/JSP/empview.jsp?id=353",
+    hospital: "PGIMER Chandigarh"
+  },
+  {
+    id: 6,
+    name: "Dr. Sewanti Limaye",
+    specialty: "Medical Oncology - Thoracic Oncology",
+    location: "Mumbai, Maharashtra",
+    country: "India",
+    rating: 4.8,
+    tags: ["Lung Cancer", "Geriatric Oncology", "Clinical Trials"],
+    imageUrl: "https://uhapo.co.in/wp-content/uploads/2023/02/Dr.-Sewanti-Limaye.png",
+    googleUrl: "https://www.logintohealth.com/oncologist-cancer-specialist/sewanti-limaye?gad_source=1&gclid=CjwKCAjw47i_BhBTEiwAaJfPpjq9UCOR5lVDTP_jPexeRLpR0WvfAndaU-uIJSAJ4AwMcsZSGp22GRoC2lYQAvD_BwE",
+    hospital: "Tata Memorial Hospital"
+  },
+  {
+    id: 7,
+    name: "Dr. Anusheel Munshi",
+    specialty: "Radiation Oncology - Lung Cancer",
+    location: "Delhi",
+    country: "India",
+    rating: 4.6,
+    tags: ["Lung SBRT", "Precision Radiotherapy", "Oligometastatic Disease"],
+    imageUrl: "https://www.manipalhospitals.com/uploads/doctors_photo/best-medical-oncologist-in-delhi-dr-abhinav-narwariya.webp",
+    googleUrl: "https://www.manipalhospitals.com/delhi/doctors/dr-abhinav-narwariya-medical-oncologist/",
+    hospital: "Manipal Hospital"
+  },
+  {
+    id: 8,
+    name: "Dr. Nagraj G. Huilgol",
+    specialty: "Radiation Oncology",
+    location: "Mumbai, Maharashtra",
+    country: "India",
+    rating: 4.9,
+    tags: ["Lung Cancer Surgery", "Esophageal Surgery", "Minimally Invasive"],
+    imageUrl: "https://uhapo.co.in/wp-content/uploads/2023/02/Dr.-Nagraj-Huilgo.png",
+    googleUrl: "https://www.nanavatimaxhospital.org/doctor/nagraj-g-huilgol",
+    hospital: "Tata Memorial Hospital"
+  },
+  {
+    id: 9,
+    name: "Dr. D. Raghunadharao",
+    specialty: "Medical Oncology - Lung Cancer",
+    location: "Visakhapatnam, Andhra Pradesh",
+    country: "India",
+    rating: 3.0,
+    tags: ["Lung Cancer", "Affordable Oncology", "Patient Care"],
+    imageUrl: "https://i1.rgstatic.net/ii/profile.image/272192361463820-1441907124178_Q128/Raghunadharao-Digumarti.jpg",
+    googleUrl: "https://www.justdial.com/Visakhapatnam/Dr-Raghunadharao-Kims-Hospital-Kancharapalem/0891PX891-X891-231219220045-X8F9_BZDET",
+    hospital: "Mahatma Gandhi Cancer Hospital & Research Institute"
+  },
+  
+]; 
