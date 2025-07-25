@@ -29,6 +29,6 @@ PulmoCare is a Lung Cancer prediction Web-Application which allows users to pred
 
 `cd fronted`
 
-"""
+'''
 npm start
-"""
+'''
