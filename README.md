@@ -32,3 +32,14 @@ PulmoCare is a Lung Cancer prediction Web-Application which allows users to pred
 '''
 npm start
 '''
+
+
+## Team Leaders
+
+-Sakshi Said
+
+-Simran Yelave
+
+-Adharsh Mishra 
+
+-Vamshi Marri 
